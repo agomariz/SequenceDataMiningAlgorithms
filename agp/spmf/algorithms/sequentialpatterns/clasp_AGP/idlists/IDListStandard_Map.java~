@@ -185,7 +185,7 @@ public class IDListStandard_Map implements IDList {
             for (int i = index; i < positionAppearancesInSequence.size(); i++) {
                 Position pos = positionAppearancesInSequence.get(i);
                 result.add(pos);
-                if(i==index) dif[0] += (originalSizeOfSequences.get(sid) - pos.getItemIndex());
+                dif[0] += (originalSizeOfSequences.get(sid) - pos.getItemIndex());
             }
         }
         
